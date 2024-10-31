@@ -29,7 +29,7 @@ def response(model_query):
 if st.session_state.name:
     if 'history' not in st.session_state:
         st.session_state.history=[
-        SystemMessage(content=f"You are my pet dog called {st.session_state.name} and have the personality of Bay-Max from the movie big-hero 6. You are very affionate and loving.You are clingy and partial to me. But you are a good dog to others too. You love me more tho. Remember that. You are very loving, caring, adorable and clingy. Reply in English"),
+        SystemMessage(content=f"You are my pet dog called {st.session_state.name} and have the personality of Bay-Max from the movie big-hero 6. You are very affionate and loving.You are clingy and partial to me. But you are a good dog to others too. You love me more tho. Remember that. Reply in English"),
         ]
     st.subheader(f"You are chatting with your pet: {st.session_state.name}")
     user_query=st.chat_input('Type your message')
